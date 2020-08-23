@@ -11,7 +11,6 @@ public class StreamMain {
         Stream<Integer> stream = intList.stream();
 
         stream.filter(x -> x > 0).filter(x -> x % 2 == 0).sorted()
-                .map(x -> x.toString().toUpperCase())
                 .forEach(System.out::print);
     }
 }
